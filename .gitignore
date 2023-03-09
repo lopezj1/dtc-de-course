@@ -1,0 +1,9 @@
+/*
+!.gitignore
+!homework
+homework/*
+!homework/week_1
+!homework/week_2
+homework/week_2/data
+homework/week_2/.prefectignore
+homework/week_2/__pycache__
