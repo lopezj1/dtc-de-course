@@ -1,0 +1,27 @@
+# Use an official Python runtime as a parent image
+FROM python:3.9
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the requirements file into the container at /app
+COPY requirements.txt /app
+
+# Install any needed packages specified in requirements.txt
+RUN apt-get install wget
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the script into the container at /app
+COPY ingest_data.py /app
+
+# # Set the environment variables
+# ENV USER=<user>
+# ENV PASSWORD=<password>
+# ENV HOST=<host>
+# ENV PORT=<port>
+# ENV DB=<db>
+# ENV TABLE_NAME=<table_name>
+# ENV URL=<url>
+
+# Run the command to start the script
+ENTRYPOINT ["python", "ingest_data.py"]

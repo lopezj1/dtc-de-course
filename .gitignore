@@ -1,0 +1,21 @@
+/*
+!README.md
+!.gitignore
+!homework
+!project
+!week_*
+
+/*.json
+/**/__*
+/**/.prefectignore
+/**/*.csv*
+/**/.docker
+
+week_1/terraform
+homework/week_2/data
+
+# # Default .gitignore content added by dbt Cloud
+week_4/target/
+week_4/dbt_packages/
+week_4/logs/
+# # end dbt Cloud content

@@ -1,0 +1,61 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-web-to-gcs'
+###
+name: github-flow
+description: The main ETL function
+version: 4acf335350b1b916eac68c7ffb3c8148
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags:
+- dev
+parameters: {}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-web-to-gcs
+manifest_path: null
+storage:
+  repository: https://github.com/lopezj1/dtc-de-course.git
+  reference: null
+  access_token: null
+  _block_document_id: 650019bf-592c-48e0-9d8d-acd66cff59b9
+  _block_document_name: zoom-github
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: homework\week_2\etl_web_to_gcs.py:etl_web_to_gcs
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    color:
+      title: color
+      default: yellow
+      position: 0
+      type: string
+    year:
+      title: year
+      default: 2019
+      position: 1
+      type: integer
+    month:
+      title: month
+      default: 2
+      position: 2
+      type: integer
+  required: null
+  definitions: null
