@@ -18,4 +18,5 @@ homework/week_2/data
 week_4/target/
 week_4/dbt_packages/
 week_4/logs/
+!week_4/seeds/taxi_zone_lookup.csv
 # # end dbt Cloud content
